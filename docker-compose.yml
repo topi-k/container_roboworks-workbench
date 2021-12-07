@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  ros2_workbench:
+    build:
+      context: .
+    shm_size: 2gb
+    ports:
+      - "6080:80"
+    volumes:
+     - './data:/root/Desktop'
